@@ -21,7 +21,7 @@ for( let i=0;i<btnEl.length;i++){
 
 document.addEventListener("keydown", function(event){
     var keyValue=event.key;
-    if(key=isFinite(event.key)|| keyValue==="+"||keyValue==="/"||keyValue==="*"||keyValue==="-"){
+    if(key=isFinite(event.key)|| keyValue==="+"||keyValue==="/"||keyValue==="*"||keyValue==="-"||keyValue==="."){
         appendValue(keyValue);
     }
     else{

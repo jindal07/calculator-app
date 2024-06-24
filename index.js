@@ -21,7 +21,7 @@ for( let i=0;i<btnEl.length;i++){
 
 document.addEventListener("keydown", function(event){
     var keyValue=event.key;
-    if(key=isFinite(event.key)|| keyValue==="+"||keyValue==="/"||keyValue==="*"||keyValue==="-"||keyValue==="."){
+    if(key=isFinite(event.key)|| keyValue==="+"||keyValue==="/45"||keyValue==="*"||keyValue==="-"||keyValue==="."){
         appendValue(keyValue);
     }
     else{
@@ -52,7 +52,8 @@ function appendValue(btnValue){
 }
 
 function calculateResult(){
-    inputEl.value=eval(inputEl.value);
+    var res=eval(inputEl.value);
+    inputEl.value=res;
 }
 function clearResult(){
     inputEl.value="";
